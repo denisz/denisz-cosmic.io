@@ -1,0 +1,1341 @@
+{
+	"game": {
+		"stages": {
+			"stage_0": {
+				"name": "stage_0",
+				"nextStage": "stage_1",
+				"mainLayer": "gameplay",
+				"gObjectLayer": "gObject",
+				"objectdepth": 3,
+				"stagedef": {},
+				"world": {
+					"doSleep": true,
+					"gravity": 9
+				},
+				"triggers": [],
+				"focus": "object1",
+				"size": {
+					"width": 50000,
+					"height": 10000
+				},
+				"manifest": [
+					{
+						"src": "assets/animations/man/images/p_bedro_l.png",
+						"id": "p_bedro_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_bedro_r.png",
+						"id": "p_bedro_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_foot_l.png",
+						"id": "p_foot_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_foot_r.png",
+						"id": "p_foot_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_hand_l.png",
+						"id": "p_hand_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_hand_r.png",
+						"id": "p_hand_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_head.png",
+						"id": "p_head"
+					},
+					{
+						"src": "assets/animations/man/images/p_ple4o_l.png",
+						"id": "p_ple4o_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_ple4o_r.png",
+						"id": "p_ple4o_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_bedro_l.png",
+						"id": "p_stand_bedro_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_bedro_r.png",
+						"id": "p_stand_bedro_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_foot.png",
+						"id": "p_stand_foot"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_hand_l.png",
+						"id": "p_stand_hand_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_hand_r.png",
+						"id": "p_stand_hand_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_head.png",
+						"id": "p_stand_head"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_ikra_l.png",
+						"id": "p_stand_ikra_l"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_ikra_r.png",
+						"id": "p_stand_ikra_r"
+					},
+					{
+						"src": "assets/animations/man/images/p_stand_tulovo.png",
+						"id": "p_stand_tulovo"
+					},
+					{
+						"src": "assets/animations/man/images/p_taz.png",
+						"id": "p_taz"
+					},
+					{
+						"src": "assets/animations/man/images/pers_all.png",
+						"id": "pers_all"
+					},
+					{
+						"src": "assets/animations/man/images/tulovo.png",
+						"id": "tulovo"
+					},
+					{
+						"src": "assets/animations/man/images/tulovo2.png",
+						"id": "tulovo2"
+					},
+					{
+						"src": "assets/animations/man/images/tulovo3.png",
+						"id": "tulovo3"
+					}
+				],
+				"layers": [
+					{
+						"name": "back_parallax",
+						"depth": 0
+					},
+					{
+						"name": "gameplay_back",
+						"depth": 1
+					},
+					{
+						"name": "gameplay",
+						"depth": 2
+					},
+					{
+						"name": "front_parallax",
+						"depth": 3
+					}
+				],
+				"tilelayers": [
+					{
+						"cellHeight": 250,
+						"cellWidth": 250,
+						"layout": "absolute",
+						"type": "tile",
+						"name": "tree",
+						"layer": "gameplay_back",
+						"data": [
+							[
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								[
+									[
+										656,
+										690,
+										35
+									]
+								],
+								-1
+							],
+							[
+								[
+									[
+										771.2,
+										-46,
+										38
+									],
+									[
+										782,
+										200,
+										39
+									]
+								],
+								[
+									[
+										842,
+										448,
+										36
+									]
+								],
+								-1,
+								-1
+							],
+							[
+								[
+									[
+										1005.6,
+										200,
+										40
+									],
+									[
+										1033.6,
+										-48,
+										37
+									]
+								],
+								[
+									[
+										1024.2,
+										259.9,
+										44
+									]
+								],
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								[
+									[
+										1490.6,
+										581.4,
+										35
+									]
+								],
+								[
+									[
+										1450.6,
+										831,
+										33
+									]
+								]
+							],
+							[
+								[
+									[
+										1656.4,
+										82,
+										34
+									]
+								],
+								[
+									[
+										1662.1,
+										331.7,
+										33
+									]
+								],
+								-1,
+								-1
+							]
+						],
+						"width": 7,
+						"height": 4,
+						"useTileSets": [
+							"jungle"
+						]
+					},
+					{
+						"cellHeight": 125,
+						"cellWidth": 125,
+						"height": 6,
+						"width": 17,
+						"layout": "table",
+						"layer": "gameplay",
+						"name": "gameplay",
+						"data": [
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								5
+							],
+							[
+								-1,
+								-1,
+								5,
+								-1,
+								-1,
+								4
+							],
+							[
+								-1,
+								-1,
+								3,
+								-1,
+								-1,
+								3
+							],
+							[
+								-1,
+								-1,
+								4,
+								-1,
+								-1,
+								3
+							],
+							[
+								-1,
+								-1,
+								3,
+								-1,
+								-1,
+								2
+							],
+							[
+								-1,
+								-1,
+								2,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								5,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								3,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								4,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								3,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								2,
+								-1,
+								-1
+							]
+						],
+						"useTileSets": [
+							"jungle"
+						]
+					},
+					{
+						"cellHeight": 125,
+						"cellWidth": 125,
+						"height": 6,
+						"width": 15,
+						"layer": "gameplay",
+						"layout": "absolute",
+						"name": "plants",
+						"data": [
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								[
+									[
+										623.2,
+										606,
+										11
+									]
+								],
+								-1
+							],
+							[
+								[
+									[
+										647.2,
+										-116,
+										44
+									]
+								],
+								-1,
+								-1,
+								-1,
+								-1,
+								[
+									[
+										642,
+										696,
+										41
+									],
+									[
+										708,
+										706,
+										41
+									],
+									[
+										715.2,
+										626,
+										12
+									]
+								]
+							],
+							[
+								[
+									[
+										775.2,
+										-80,
+										43
+									]
+								],
+								[
+									[
+										761.2,
+										224,
+										45
+									],
+									[
+										867.2,
+										230,
+										11
+									]
+								],
+								[
+									[
+										774,
+										326,
+										41
+									],
+									[
+										862,
+										354,
+										41
+									],
+									[
+										848,
+										344,
+										41
+									]
+								],
+								-1,
+								-1,
+								[
+									[
+										778,
+										702,
+										41
+									],
+									[
+										832,
+										698,
+										41
+									]
+								]
+							],
+							[
+								[
+									[
+										946.7,
+										-78.8,
+										43
+									]
+								],
+								-1,
+								[
+									[
+										884,
+										322,
+										41
+									],
+									[
+										956,
+										322,
+										41
+									],
+									[
+										934,
+										338,
+										41
+									]
+								],
+								-1,
+								-1,
+								-1
+							],
+							[
+								[
+									[
+										1021.5,
+										-104.5,
+										44
+									]
+								],
+								[
+									[
+										1019.2,
+										226,
+										45
+									]
+								],
+								[
+									[
+										1003.2,
+										308,
+										16
+									]
+								],
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								-1,
+								-1,
+								-1,
+								-1,
+								-1,
+								-1
+							],
+							[
+								[
+									[
+										1507.2,
+										-43.1,
+										44
+									],
+									[
+										1598.4,
+										-6.3,
+										43
+									]
+								],
+								-1,
+								-1,
+								[
+									[
+										1578.3,
+										449.8,
+										41
+									],
+									[
+										1618.3,
+										455.6,
+										41
+									]
+								],
+								-1,
+								-1
+							],
+							[
+								[
+									[
+										1735.8,
+										80.4,
+										43
+									],
+									[
+										1674.3,
+										8.9,
+										43
+									]
+								],
+								-1,
+								-1,
+								[
+									[
+										1656.4,
+										451.7,
+										41
+									]
+								],
+								-1,
+								-1
+							],
+							[
+								[
+									[
+										1773.1,
+										-15.2,
+										44
+									]
+								],
+								-1,
+								-1,
+								[
+									[
+										1841.3,
+										444.1,
+										41
+									],
+									[
+										1787.9,
+										453.6,
+										41
+									]
+								],
+								-1,
+								-1
+							]
+						],
+						"useTileSets": [
+							"jungle"
+						]
+					}
+				],
+				"objectlayers": [
+					{
+						"depth": 0,
+						"objects": [
+							{
+								"bodyDef": {
+									"y": 100,
+									"x": 450,
+									"type": "dynamic",
+									"allowSleep": false,
+									"bullet": false,
+									"fixedRotation": true,
+									"linearDamping": 0
+								},
+								"fixturesDef": [
+									{
+										"density": 0,
+										"friction": 0,
+										"restitution": 0,
+										"shape": {
+											"type": "rectangle",
+											"width": 50,
+											"height": 60,
+											"x": 0,
+											"y": -27
+										}
+									},
+									{
+										"density": 1.2,
+										"restitution": 0,
+										"friction": 1,
+										"shape": {
+											"type": "circle",
+											"radius": 25
+										}
+									}
+								],
+								"entity": "player",
+								"type": "player",
+								"uid": "object1"
+							}
+						]
+					}
+				]
+			}
+		},
+		"tilesets": [
+			{
+				"tilesService": [
+					{
+						"name": "2nd_isl1 (1).png",
+						"rect": [
+							399,
+							500,
+							125,
+							125
+						],
+						"index": 1,
+						"fixture": null
+					},
+					{
+						"name": "2nd_isl2.png",
+						"rect": [
+							524,
+							500,
+							125,
+							125
+						],
+						"index": 2,
+						"fixture": [
+							{
+								"density": 1,
+								"restitution": 0,
+								"friction": 2,
+								"shape": {
+									"type": "rectangle",
+									"x": 61.75,
+									"y": 80.75,
+									"width": 121.5,
+									"height": 69.5
+								}
+							}
+						]
+					},
+					{
+						"name": "2nd_isl3.png",
+						"rect": [
+							811,
+							500,
+							125,
+							125
+						],
+						"index": 3,
+						"fixture": [
+							{
+								"density": 1,
+								"restitution": 0,
+								"friction": 2,
+								"shape": {
+									"type": "rectangle",
+									"x": 62.25,
+									"y": 81,
+									"width": 121.5,
+									"height": 70
+								}
+							}
+						]
+					},
+					{
+						"name": "2nd_isl4.png",
+						"rect": [
+							0,
+							589,
+							125,
+							125
+						],
+						"index": 4,
+						"fixture": [
+							{
+								"density": 1,
+								"restitution": 0,
+								"friction": 2,
+								"shape": {
+									"type": "rectangle",
+									"x": 62.75,
+									"y": 80.25,
+									"width": 121.5,
+									"height": 69.5
+								}
+							}
+						]
+					},
+					{
+						"name": "2nd_isl5.png",
+						"rect": [
+							399,
+							625,
+							125,
+							125
+						],
+						"index": 5,
+						"fixture": [
+							{
+								"density": 1,
+								"restitution": 0,
+								"friction": 2,
+								"shape": {
+									"type": "rectangle",
+									"x": 62.75,
+									"y": 80,
+									"width": 120.5,
+									"height": 69
+								}
+							}
+						]
+					},
+					{
+						"name": "plant1_1.png",
+						"rect": [
+							1003,
+							0,
+							18,
+							81
+						],
+						"index": 6,
+						"fixture": null
+					},
+					{
+						"name": "plant1_2.png",
+						"rect": [
+							1003,
+							150,
+							17,
+							82
+						],
+						"index": 7,
+						"fixture": null
+					},
+					{
+						"name": "plant1_3.png",
+						"rect": [
+							699,
+							538,
+							12,
+							70
+						],
+						"index": 8,
+						"fixture": null
+					},
+					{
+						"name": "plant1_4.png",
+						"rect": [
+							1003,
+							81,
+							21,
+							69
+						],
+						"index": 9,
+						"fixture": null
+					},
+					{
+						"name": "plant1_5.png",
+						"rect": [
+							982,
+							414,
+							23,
+							64
+						],
+						"index": 10,
+						"fixture": null
+					},
+					{
+						"name": "plant2_1.png",
+						"rect": [
+							936,
+							500,
+							82,
+							57
+						],
+						"index": 11,
+						"fixture": null
+					},
+					{
+						"name": "plant2_2.png",
+						"rect": [
+							649,
+							500,
+							66,
+							38
+						],
+						"index": 12,
+						"fixture": null
+					},
+					{
+						"name": "plant2_3.png",
+						"rect": [
+							678,
+							608,
+							13,
+							53
+						],
+						"index": 13,
+						"fixture": null
+					},
+					{
+						"name": "plant2_4.png",
+						"rect": [
+							1005,
+							414,
+							16,
+							59
+						],
+						"index": 14,
+						"fixture": null
+					},
+					{
+						"name": "plant2_5.png",
+						"rect": [
+							711,
+							538,
+							11,
+							52
+						],
+						"index": 15,
+						"fixture": null
+					},
+					{
+						"name": "plant3_1.png",
+						"rect": [
+							649,
+							608,
+							29,
+							24
+						],
+						"index": 16,
+						"fixture": null
+					},
+					{
+						"name": "plant3_2.png",
+						"rect": [
+							811,
+							477,
+							27,
+							23
+						],
+						"index": 17,
+						"fixture": null
+					},
+					{
+						"name": "plant3_3.png",
+						"rect": [
+							222,
+							547,
+							21,
+							24
+						],
+						"index": 18,
+						"fixture": null
+					},
+					{
+						"name": "plant3_4.png",
+						"rect": [
+							838,
+							477,
+							24,
+							23
+						],
+						"index": 19,
+						"fixture": null
+					},
+					{
+						"name": "plant4_1.png",
+						"rect": [
+							936,
+							557,
+							46,
+							33
+						],
+						"index": 20,
+						"fixture": null
+					},
+					{
+						"name": "plant4_2.png",
+						"rect": [
+							980,
+							606,
+							34,
+							26
+						],
+						"index": 21,
+						"fixture": null
+					},
+					{
+						"name": "plant4_3.png",
+						"rect": [
+							862,
+							477,
+							21,
+							22
+						],
+						"index": 22,
+						"fixture": null
+					},
+					{
+						"name": "plant5_1.png",
+						"rect": [
+							982,
+							250,
+							40,
+							56
+						],
+						"index": 23,
+						"fixture": null
+					},
+					{
+						"name": "plant5_2.png",
+						"rect": [
+							177,
+							547,
+							45,
+							37
+						],
+						"index": 24,
+						"fixture": null
+					},
+					{
+						"name": "plant5_3.png",
+						"rect": [
+							811,
+							434,
+							72,
+							43
+						],
+						"index": 25,
+						"fixture": null
+					},
+					{
+						"name": "plant5_4.png",
+						"rect": [
+							649,
+							538,
+							50,
+							43
+						],
+						"index": 26,
+						"fixture": null
+					},
+					{
+						"name": "plant6_1.png",
+						"rect": [
+							177,
+							500,
+							63,
+							47
+						],
+						"index": 27,
+						"fixture": null
+					},
+					{
+						"name": "plant6_2.png",
+						"rect": [
+							936,
+							590,
+							44,
+							25
+						],
+						"index": 28,
+						"fixture": null
+					},
+					{
+						"name": "plant6_3.png",
+						"rect": [
+							649,
+							581,
+							43,
+							27
+						],
+						"index": 29,
+						"fixture": null
+					},
+					{
+						"name": "plant7_1.png",
+						"rect": [
+							982,
+							306,
+							36,
+							57
+						],
+						"index": 30,
+						"fixture": null
+					},
+					{
+						"name": "plant7_2.png",
+						"rect": [
+							982,
+							363,
+							35,
+							51
+						],
+						"index": 31,
+						"fixture": null
+					},
+					{
+						"name": "plant7_3.png",
+						"rect": [
+							982,
+							557,
+							25,
+							49
+						],
+						"index": 32,
+						"fixture": null
+					},
+					{
+						"name": "tree1_1.png",
+						"rect": [
+							420,
+							0,
+							294,
+							250
+						],
+						"index": 33,
+						"fixture": null
+					},
+					{
+						"name": "tree1_2.png",
+						"rect": [
+							714,
+							0,
+							289,
+							250
+						],
+						"index": 34,
+						"fixture": null
+					},
+					{
+						"name": "tree1_3.png",
+						"rect": [
+							0,
+							0,
+							420,
+							250
+						],
+						"index": 35,
+						"fixture": null
+					},
+					{
+						"name": "tree1_4.png",
+						"rect": [
+							0,
+							250,
+							247,
+							250
+						],
+						"index": 36,
+						"fixture": null
+					},
+					{
+						"name": "tree1_5.png",
+						"rect": [
+							883,
+							250,
+							99,
+							250
+						],
+						"index": 37,
+						"fixture": null
+					},
+					{
+						"name": "tree1_6.png",
+						"rect": [
+							723,
+							434,
+							88,
+							250
+						],
+						"index": 38,
+						"fixture": null
+					},
+					{
+						"name": "tree1_7.png",
+						"rect": [
+							469,
+							250,
+							136,
+							250
+						],
+						"index": 39,
+						"fixture": null
+					},
+					{
+						"name": "tree1_8.png",
+						"rect": [
+							605,
+							250,
+							118,
+							250
+						],
+						"index": 40,
+						"fixture": null
+					},
+					{
+						"name": "tree1_downground.png",
+						"rect": [
+							0,
+							500,
+							177,
+							89
+						],
+						"index": 41,
+						"fixture": null
+					},
+					{
+						"name": "tree1_leafs1.png",
+						"rect": [
+							247,
+							498,
+							152,
+							130
+						],
+						"index": 42,
+						"fixture": null
+					},
+					{
+						"name": "tree1_leafs2.png",
+						"rect": [
+							723,
+							250,
+							160,
+							184
+						],
+						"index": 43,
+						"fixture": null
+					},
+					{
+						"name": "tree1_leafs3.png",
+						"rect": [
+							247,
+							250,
+							222,
+							248
+						],
+						"index": 44,
+						"fixture": null
+					},
+					{
+						"name": "tree1_upground.png",
+						"rect": [
+							125,
+							589,
+							122,
+							77
+						],
+						"index": 45,
+						"fixture": null
+					}
+				],
+				"name": "jungle",
+				"type": "tileset",
+				"startid": 1,
+				"source": "sprite-jungle",
+				"manifest": {
+					"src": "/assets/atlas/tiles/jungle/jungle.png",
+					"id": "sprite-jungle"
+				},
+				"numTiles": 45
+			},
+			{
+				"tilesService": [
+					{
+						"name": "background_jungle.jpg",
+						"rect": [
+							0,
+							0,
+							1500,
+							1000
+						],
+						"index": 101,
+						"fixture": null
+					}
+				],
+				"name": "background_jungle",
+				"type": "tileset",
+				"startid": 101,
+				"source": "sprite-background_jungle",
+				"manifest": {
+					"src": "/assets/atlas/tiles/background_jungle/background_jungle.jpg",
+					"id": "sprite-background_jungle"
+				},
+				"numTiles": 1
+			}
+		]
+	}
+}

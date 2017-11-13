@@ -1,0 +1,53 @@
+.b-bar-track__health {
+	width                    : 307px;
+	height                   : 90px;
+	background-image         : url('../images/GUI/bar/bar_life_frame.png');
+	position                 : absolute;
+	-webkit-transform        : translate(0px, 0px) scale(0.6);
+	-ms-transform            : translate(0px, 0px) scale(0.6);
+	top                      : 0;
+	left                     : 0;
+	-webkit-filter           : drop-shadow(0px 0px 2px black);
+	-webkit-transform-origin : 10px 0px;
+	-ms-transform-origin     : 10px 0px;
+}
+
+.b-bar-thumb__health {
+	width                              : 307px;
+	height                             : 90px;
+	background-image                   : url('../images/GUI/bar/bar_life_liquid.png');
+	background-repeat                  : no-repeat;
+	-webkit-mask-image                 : url('../images/GUI/bar/bar_mask5.png');
+	-webkit-mask-position-y            : -4px;
+	-webkit-mask-repeat                : no-repeat;
+	-webkit-transition-duration        : .1s;
+	-webkit-transition-timing-function : linear;
+	-webkit-transition-property        : -webkit-mask-position;
+}
+
+.b-bar-track__fuel {
+	width                    : 307px;
+	height                   : 90px;
+	background-image         : url('../images/GUI/bar/bar_fuel_frame.png');
+	position                 : absolute;
+	-webkit-transform        : translate(0px, 0px) scale(0.6);
+	-ms-transform            : translate(0px, 0px) scale(0.6);
+	top                      : 0;
+	left                     : 0;
+	-webkit-filter           : drop-shadow(0px 0px 2px black);
+	-webkit-transform-origin : 509px 10px;
+	-ms-transform-origin     : 509px 10px;
+}
+
+.b-bar-thumb__fuel {
+	width                              : 307px;
+	height                             : 90px;
+	background-image                   : url('../images/GUI/bar/bar_fuel_liquid.png');
+	background-repeat                  : no-repeat;
+	-webkit-mask-image                 : url('../images/GUI/bar/bar_mask5.png');
+	-webkit-mask-position-y            : -4px;
+	-webkit-mask-repeat                : no-repeat;
+	-webkit-transition-duration        : .1s;
+	-webkit-transition-timing-function : linear;
+	-webkit-transition-property        : -webkit-mask-position;
+}

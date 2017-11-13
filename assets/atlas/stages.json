@@ -1,0 +1,654 @@
+{
+    "game" : {
+        "stages"   : {
+            "stage_0" : {
+                "name"              : "stage_0",
+                "manifestResources" : [
+                    {
+                        "src" : "assets/atlas/tiles/2nd_isl1.png",
+                        "id"  : "2nd_isl1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/2nd_isl2.png",
+                        "id"  : "2nd_isl2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/2nd_isl3.png",
+                        "id"  : "2nd_isl3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/2nd_isl4.png",
+                        "id"  : "2nd_isl4"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/2nd_isl5.png",
+                        "id"  : "2nd_isl5"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant1_1.png",
+                        "id"  : "plant1_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant1_2.png",
+                        "id"  : "plant1_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant1_3.png",
+                        "id"  : "plant1_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant1_4.png",
+                        "id"  : "plant1_4"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant1_5.png",
+                        "id"  : "plant1_5"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant2_1.png",
+                        "id"  : "plant2_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant2_2.png",
+                        "id"  : "plant2_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant2_3.png",
+                        "id"  : "plant2_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant2_4.png",
+                        "id"  : "plant2_4"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant2_5.png",
+                        "id"  : "plant2_5"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant3_1.png",
+                        "id"  : "plant3_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant3_2.png",
+                        "id"  : "plant3_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant3_3.png",
+                        "id"  : "plant3_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant3_4.png",
+                        "id"  : "plant3_4"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant4_1.png",
+                        "id"  : "plant4_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant4_2.png",
+                        "id"  : "plant4_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant4_3.png",
+                        "id"  : "plant4_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant5_1.png",
+                        "id"  : "plant5_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant5_2.png",
+                        "id"  : "plant5_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant5_3.png",
+                        "id"  : "plant5_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant5_4.png",
+                        "id"  : "plant5_4"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant6_1.png",
+                        "id"  : "plant6_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant6_2.png",
+                        "id"  : "plant6_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant6_3.png",
+                        "id"  : "plant6_3"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant7_1.png",
+                        "id"  : "plant7_1"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant7_2.png",
+                        "id"  : "plant7_2"
+                    },
+                    {
+                        "src" : "assets/atlas/tiles/plant7_3.png",
+                        "id"  : "plant7_3"
+                    },
+
+                    {
+                        "src" : "assets/animations/man/images/p_bedro_l.png",
+                        "id"  : "p_bedro_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_bedro_r.png",
+                        "id"  : "p_bedro_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_foot_l.png",
+                        "id"  : "p_foot_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_foot_r.png",
+                        "id"  : "p_foot_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_hand_l.png",
+                        "id"  : "p_hand_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_hand_r.png",
+                        "id"  : "p_hand_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_head.png",
+                        "id"  : "p_head"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_ple4o_l.png",
+                        "id"  : "p_ple4o_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_ple4o_r.png",
+                        "id"  : "p_ple4o_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_bedro_l.png",
+                        "id"  : "p_stand_bedro_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_bedro_r.png",
+                        "id"  : "p_stand_bedro_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_foot.png",
+                        "id"  : "p_stand_foot"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_hand_l.png",
+                        "id"  : "p_stand_hand_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_hand_r.png",
+                        "id"  : "p_stand_hand_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_head.png",
+                        "id"  : "p_stand_head"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_ikra_l.png",
+                        "id"  : "p_stand_ikra_l"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_ikra_r.png",
+                        "id"  : "p_stand_ikra_r"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_stand_tulovo.png",
+                        "id"  : "p_stand_tulovo"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/p_taz.png",
+                        "id"  : "p_taz"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/pers_all.png",
+                        "id"  : "pers_all"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/tulovo.png",
+                        "id"  : "tulovo"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/tulovo2.png",
+                        "id"  : "tulovo2"
+                    },
+                    {
+                        "src" : "assets/animations/man/images/tulovo3.png",
+                        "id"  : "tulovo3"
+                    }
+                ],
+                "nextStage"         : "stage_1",
+                "mainLayer"         : "gameplay",
+                "gObjectLayer"      : "gObject",
+                "objectdepth"       : 2,
+                "stagedef"          : {},
+                "layers"            : [
+                    {
+                        "name"  : "back_parallax",
+                        "depth" : 0
+                    },
+                    {
+                        "name"  : "gameplay_back",
+                        "depth" : 1
+                    },
+                    {
+                        "name"  : "gameplay",
+                        "depth" : 2
+                    },
+                    {
+                        "name"  : "front_parallax",
+                        "depth" : 3
+                    }
+                ],
+                "world"             : {
+                    "doSleep" : true,
+                    "gravity" : 9
+                },
+                "triggers"          : [
+
+                ],
+                "focus"             : "object1",
+                "objectlayers"      : [
+                    {
+                        "depth"   : 0,
+                        "objects" : [
+                            {
+                                "bodyDef"     : {
+                                    "y"             : 100,
+                                    "x"             : 450,
+                                    "type"          : "dynamic",
+                                    "allowSleep"    : false,
+                                    "bullet"        : false,
+                                    "fixedRotation" : true,
+                                    "linearDamping" : 0
+                                },
+                                "fixturesDef" : [
+                                    {
+                                        "density"     : 0,
+                                        "friction"    : 0,
+                                        "restitution" : 0,
+                                        "shape"       : {
+                                            "type"   : "orientedRectangle",
+                                            "width"  : 50,
+                                            "height" : 60,
+                                            "x"      : 0,
+                                            "y"      : -27
+                                        }
+                                    },
+                                    {
+                                        "density"     : 1.2,
+                                        "restitution" : 0,
+                                        "friction"    : 1,
+                                        "shape"       : {
+                                            "type"   : "circle",
+                                            "radius" : 25
+                                        }
+                                    }
+                                ],
+                                "entity"      : "player",
+                                "type"        : "player",
+                                "uid"         : "object1"
+                            },
+                            {
+                                "bodyDef"     : {
+                                    "y"             : 100,
+                                    "x"             : 750,
+                                    "type"          : "dynamic",
+                                    "allowSleep"    : false,
+                                    "bullet"        : true,
+                                    "fixedRotation" : true
+                                },
+                                "fixturesDef" : [
+                                    {
+                                        "shape" : {
+                                            "density"     : 0,
+                                            "friction"    : 0,
+                                            "restitution" : 0,
+                                            "type"        : "orientedRectangle",
+                                            "width"       : 48,
+                                            "height"      : 70,
+                                            "x"           : 0,
+                                            "y"           : -34
+                                        }
+                                    },
+                                    {
+                                        "density"     : 1.2,
+                                        "restitution" : 0,
+                                        "friction"    : 10,
+                                        "shape"       : {
+                                            "type"   : "circle",
+                                            "radius" : 25
+                                        }
+                                    }
+                                ],
+                                "entity"      : "enemy",
+                                "type"        : "test",
+                                "uid"         : "object2"
+                            }
+                        ]
+                    }
+                ],
+                "gameObjects"       : [
+                ],
+                "tilelayers"        : [
+                    {
+                        "cellHeight" : 125,
+                        "cellWidth"  : 125,
+                        "height"     : 10,
+                        "width"      : 10,
+                        "layout"     : "table",
+                        "layer"      : "gameplay",
+                        "name"       : "gameplay",
+                        "data"       : [
+                            [-1, -1, -1, 2, -1],
+                        ]
+                    },
+                    {
+                        "cellHeight" : 125,
+                        "cellWidth"  : 125,
+                        "height"     : 45,
+                        "width"      : 45,
+                        "layer"      : "gameplay",
+                        "layout"     : "absolute",
+                        "name"       : "plants",
+                        "data"       : null
+                    }
+                ]
+            }
+        },
+        "tilesets" : [
+            {
+                "tilesService"    : [
+                    {
+                        "name"  : "2nd_isl1 (1).png",
+                        "rect"  : [399, 500, 125, 125],
+                        "shape" : null,
+                        "index" : 1
+                    },
+                    {
+                        "name"  : "2nd_isl2.png",
+                        "rect"  : [524, 500, 125, 125],
+                        "shape" : null,
+                        "index" : 2
+                    },
+                    {
+                        "name"  : "2nd_isl3.png",
+                        "rect"  : [811, 500, 125, 125],
+                        "shape" : null,
+                        "index" : 3
+                    },
+                    {
+                        "name"  : "2nd_isl4.png",
+                        "rect"  : [0, 589, 125, 125],
+                        "shape" : null,
+                        "index" : 4
+                    },
+                    {
+                        "name"  : "2nd_isl5.png",
+                        "rect"  : [399, 625, 125, 125],
+                        "shape" : null,
+                        "index" : 5
+                    },
+                    {
+                        "name"  : "plant1_1.png",
+                        "rect"  : [1003, 0, 18, 81],
+                        "shape" : null,
+                        "index" : 6
+                    },
+                    {
+                        "name"  : "plant1_2.png",
+                        "rect"  : [1003, 150, 17, 82],
+                        "shape" : null,
+                        "index" : 7
+                    },
+                    {
+                        "name"  : "plant1_3.png",
+                        "rect"  : [699, 538, 12, 70],
+                        "shape" : null,
+                        "index" : 8
+                    },
+                    {
+                        "name"  : "plant1_4.png",
+                        "rect"  : [1003, 81, 21, 69],
+                        "shape" : null,
+                        "index" : 9
+                    },
+                    {
+                        "name"  : "plant1_5.png",
+                        "rect"  : [982, 414, 23, 64],
+                        "shape" : null,
+                        "index" : 10
+                    },
+                    {
+                        "name"  : "plant2_1.png",
+                        "rect"  : [936, 500, 82, 57],
+                        "shape" : null,
+                        "index" : 11
+                    },
+                    {
+                        "name"  : "plant2_2.png",
+                        "rect"  : [649, 500, 66, 38],
+                        "shape" : null,
+                        "index" : 12
+                    },
+                    {
+                        "name"  : "plant2_3.png",
+                        "rect"  : [678, 608, 13, 53],
+                        "shape" : null,
+                        "index" : 13
+                    },
+                    {
+                        "name"  : "plant2_4.png",
+                        "rect"  : [1005, 414, 16, 59],
+                        "shape" : null,
+                        "index" : 14
+                    },
+                    {
+                        "name"  : "plant2_5.png",
+                        "rect"  : [711, 538, 11, 52],
+                        "shape" : null,
+                        "index" : 15
+                    },
+                    {
+                        "name"  : "plant3_1.png",
+                        "rect"  : [649, 608, 29, 24],
+                        "shape" : null,
+                        "index" : 16
+                    },
+                    {
+                        "name"  : "plant3_2.png",
+                        "rect"  : [811, 477, 27, 23],
+                        "shape" : null,
+                        "index" : 17
+                    },
+                    {
+                        "name"  : "plant3_3.png",
+                        "rect"  : [222, 547, 21, 24],
+                        "shape" : null,
+                        "index" : 18
+                    },
+                    {
+                        "name"  : "plant3_4.png",
+                        "rect"  : [838, 477, 24, 23],
+                        "shape" : null,
+                        "index" : 19
+                    },
+                    {
+                        "name"  : "plant4_1.png",
+                        "rect"  : [936, 557, 46, 33],
+                        "shape" : null,
+                        "index" : 20
+                    },
+                    {
+                        "name"  : "plant4_2.png",
+                        "rect"  : [980, 606, 34, 26],
+                        "shape" : null,
+                        "index" : 21
+                    },
+                    {
+                        "name"  : "plant4_3.png",
+                        "rect"  : [862, 477, 21, 22],
+                        "shape" : null,
+                        "index" : 22
+                    },
+                    {
+                        "name"  : "plant5_1.png",
+                        "rect"  : [982, 250, 40, 56],
+                        "shape" : null,
+                        "index" : 23
+                    },
+                    {
+                        "name"  : "plant5_2.png",
+                        "rect"  : [177, 547, 45, 37],
+                        "shape" : null,
+                        "index" : 24
+                    },
+                    {
+                        "name"  : "plant5_3.png",
+                        "rect"  : [811, 434, 72, 43],
+                        "shape" : null,
+                        "index" : 25
+                    },
+                    {
+                        "name"  : "plant5_4.png",
+                        "rect"  : [649, 538, 50, 43],
+                        "shape" : null,
+                        "index" : 26
+                    },
+                    {
+                        "name"  : "plant6_1.png",
+                        "rect"  : [177, 500, 63, 47],
+                        "shape" : null,
+                        "index" : 27
+                    },
+                    {
+                        "name"  : "plant6_2.png",
+                        "rect"  : [936, 590, 44, 25],
+                        "shape" : null,
+                        "index" : 28
+                    },
+                    {
+                        "name"  : "plant6_3.png",
+                        "rect"  : [649, 581, 43, 27],
+                        "shape" : null,
+                        "index" : 29
+                    },
+                    {
+                        "name"  : "plant7_1.png",
+                        "rect"  : [982, 306, 36, 57],
+                        "shape" : null,
+                        "index" : 30
+                    },
+                    {
+                        "name"  : "plant7_2.png",
+                        "rect"  : [982, 363, 35, 51],
+                        "shape" : null,
+                        "index" : 31
+                    },
+                    {
+                        "name"  : "plant7_3.png",
+                        "rect"  : [982, 557, 25, 49],
+                        "shape" : null,
+                        "index" : 32
+                    },
+                    {
+                        "name"  : "tree1_1.png",
+                        "rect"  : [420, 0, 294, 250],
+                        "shape" : null,
+                        "index" : 33
+                    },
+                    {
+                        "name"  : "tree1_2.png",
+                        "rect"  : [714, 0, 289, 250],
+                        "shape" : null,
+                        "index" : 34
+                    },
+                    {
+                        "name"  : "tree1_3.png",
+                        "rect"  : [0, 0, 420, 250],
+                        "shape" : null,
+                        "index" : 35
+                    },
+                    {
+                        "name"  : "tree1_4.png",
+                        "rect"  : [0, 250, 247, 250],
+                        "shape" : null,
+                        "index" : 36
+                    },
+                    {
+                        "name"  : "tree1_5.png",
+                        "rect"  : [883, 250, 99, 250],
+                        "shape" : null,
+                        "index" : 37
+                    },
+                    {
+                        "name"  : "tree1_6.png",
+                        "rect"  : [723, 434, 88, 250],
+                        "shape" : null,
+                        "index" : 38
+                    },
+                    {
+                        "name"  : "tree1_7.png",
+                        "rect"  : [469, 250, 136, 250],
+                        "shape" : null,
+                        "index" : 39
+                    },
+                    {
+                        "name"  : "tree1_8.png",
+                        "rect"  : [605, 250, 118, 250],
+                        "shape" : null,
+                        "index" : 40
+                    },
+                    {
+                        "name"  : "tree1_downground.png",
+                        "rect"  : [0, 500, 177, 89],
+                        "shape" : null,
+                        "index" : 41
+                    },
+                    {
+                        "name"  : "tree1_leafs1.png",
+                        "rect"  : [247, 498, 152, 130],
+                        "shape" : null,
+                        "index" : 42
+                    },
+                    {
+                        "name"  : "tree1_leafs2.png",
+                        "rect"  : [723, 250, 160, 184],
+                        "shape" : null,
+                        "index" : 43
+                    },
+                    {
+                        "name"  : "tree1_leafs3.png",
+                        "rect"  : [247, 250, 222, 248],
+                        "shape" : null,
+                        "index" : 44
+                    },
+                    {
+                        "name"  : "tree1_upground.png",
+                        "rect"  : [125, 589, 122, 77],
+                        "shape" : null,
+                        "index" : 45
+                    }
+                ],
+                "name"     : "jungle",
+                "type"     : "tileset",
+                "startid"  : 1,
+                "source"   : "sprite-jungle",
+                "manifest" : {
+                    "src" : "/assets/atlas/tiles/jungle/jungle.png",
+                    "id"  : "sprite-jungle"
+                },
+                "numTiles" : 45
+            }
+        ]
+    }
+}
